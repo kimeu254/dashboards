@@ -1,1 +1,1 @@
-# dashbords
+# dashboards
