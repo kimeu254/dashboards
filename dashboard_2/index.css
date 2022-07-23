@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/*---ROOT VARIABLES---*/
+/* ======= DARK THEME VAR ===========*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  font-size: 0.88rem;
+  background: #f6f6f9;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+
+a {
+  color: #363949;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-pic {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.primary {
+  color: #7380ec;
+}
+
+.danger {
+  color: #ff7782;
+}
+
+.success {
+  color: #41f1b6;
+}
+
+.warning {
+  color: #ffbb55;
+}
+
+aside {
+  height: 100vh;
+  width: 17vw;
+  background: #fff;
+}
+
+aside .top {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+}
+
+aside .logo,
+aside .logo-description {
+  padding: 2px;
+}
+
+aside .logo img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+aside .close {
+  display: none;
+}
+
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a span {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar .top-side a {
+  height: 3rem;
+}
+
+aside .sidebar hr.thin {
+  border-top: 0.1px solid rgb(245, 240, 240);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+aside .sidebar .middle-side a {
+  height: 2rem;
+}
+
+aside .sidebar .middle-side .drop,
+aside .sidebar .bottom-side .drop {
+  display: flex;
+  align-items: center;
+}
+
+aside .sidebar .middle-side .drop .posts {
+  margin-left: 1rem;
+}
+
+aside .sidebar .middle-side .drop .arrow {
+  padding: 10px;
+}
+
+aside .sidebar .middle-side .drop .plus {
+  padding-left: 6.7rem;
+}
+
+aside .sidebar .middle-side .schedule-count {
+  background: transparent;
+  color: grey;
+  font-size: 11px;
+}
+
+aside .sidebar .bottom-side .drop .posts {
+  margin-left: 1rem;
+}
+
+aside .sidebar .bottom-side .drop .arrow {
+  padding: 10px;
+}
+
+aside .sidebar .bottom-side .drop .plus {
+  padding-left: 2rem;
+}
+
+aside .sidebar .bottom-side a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+/* ============= MAIN ================= */
+main {
+  width: 50vw;
+}
+
+main .following {
+  display: flex;
+  align-items: center;
+  margin: 2rem 3rem 3rem 2.5rem;
+  gap: 1rem;
+}
+
+main .following img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+main .following .image {
+  text-align: center;
+}
+
+main .performance {
+  margin: 0 0 0 3rem;
+}
+
+main .performance .activity {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+main .performance .activity > div {
+  background: hsla(283deg, 86%, 28%, 0.952);
+  color: #fff;
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  transition: all 300ms ease;
+}
+
+/* ============= RIGHT ======================= */
+.right {
+  background: #fff;
+}
+
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.right .top button {
+  display: none;
+}
+
+.right .theme-toggler {
+  background: rgba(132, 139, 200, 0.18);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.right .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .theme-toggler span.active {
+  background: #7380ec;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+.right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}/*# sourceMappingURL=index.css.map */
